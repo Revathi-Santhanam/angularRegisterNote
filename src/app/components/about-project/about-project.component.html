@@ -1,0 +1,103 @@
+<div class="container-fluid justify-content-center">
+  <h2 class="container-fluid text-center text-white bg-dark pt-5 pb-5">
+    Register Note
+  </h2>
+  <div class="ps-5 ms-5">
+    <h5 class="text-body pt-3"><u>About the application:</u></h5>
+    <div class="row pt-5">
+      <div class="col -6 ps-5 ms-5">
+        <h6>Technology used:</h6>
+        <ul>
+          <li>HTML 5</li>
+          <li>CSS3</li>
+          <li>BootStrap 5</li>
+          <li>Angular Js 16</li>
+        </ul>
+      </div>
+      <div class="col-6 pe-5 me-5">
+        <h6>Methods used to do operations:</h6>
+        <ul>
+          <li>Save Method</li>
+          <li>Edit or Update Method</li>
+          <li>Delete Method</li>
+          <li>View the entered log Method</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row ps-5 pe-5">
+      <div class="row">
+        <div class="col-2 border text-center pt-4"><h6>Save Method</h6></div>
+        <div class="col-8 border ps-5 pt-3 pb-3">
+          <p>
+            Here, We can Save user's <b>[Name, Phone Number, Email Id]</b> in to
+            the Register log. and store it in Directory interface type.
+          </p>
+          <p>
+            For user Id reference I used getRandomId Method to generate random
+            number for the user Id.
+          </p>
+        </div>
+        <div class="col-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-2 border text-center pt-4">
+          <h6>View Users Log Method</h6>
+        </div>
+        <div class="col-8 border ps-5 pt-3 pb-3">
+          <p>
+            Below the Register UI part, you can view the saved user's contact
+            details like <b>Name, Phone Number, Email Id--</b> and also you can
+            see the
+            <b>edit and delete</b>
+            button in each entry.
+          </p>
+          <p>
+            Here you can edit or delete the entry by clicking on the buttons
+            provided.
+          </p>
+        </div>
+        <div class="col-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-2 border text-center pt-4"><h6>Delete Method</h6></div>
+        <div class="col-8 border ps-5 pt-3 pb-3">
+          <p>
+            You can delete the entered details by clicking on the delete button
+            provided in each entry.
+          </p>
+          <p>
+            Here, I done the delete by getting Id of the particular entry you
+            are clicking, and I matching with the directory.
+          </p>
+          <p>And, removing that part alone from the directory.</p>
+        </div>
+        <div class="col-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-2 border text-center pt-4">
+          <h6>Edit or Upadte Method</h6>
+        </div>
+        <div class="col-8 border ps-5 pt-3 pb-3">
+          <p>
+            You can edit or update your entry by clicking on edit button
+            provided in each entry.
+          </p>
+          <p>
+            Here, I match the edit Id with the entry's Id you are clicked , if it get matched
+            the entry will reflect in register UI and the save button will  turn into update button.
+          </p>
+          <p>
+            So, you can do the necessary updation and click update button to push the updated
+            entry into the directory.
+          </p>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+    <div class="pt-3 ps-5 pb-5">
+         <button class="btn btn-success" (click)="move()">
+            Move to Application
+          </button>
+    </div>
+  </div>
+</div>

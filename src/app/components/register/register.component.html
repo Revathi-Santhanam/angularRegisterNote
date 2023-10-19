@@ -1,0 +1,68 @@
+<div
+  class="container-fluid vh-100"
+  style="color: white; background-color: rgb(210, 170, 235)"
+>
+  <div class="main row justify-content-center">
+    <div class="text-center row justify-content-center mt-5">
+      <h1 class="mb-5" style="color: white">Register Note</h1>
+    </div>
+    <div class="row justify-content-center mb-4">
+      <div class="col-8 mb-3">
+        <label for="name">User Name</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter User Name"
+          [(ngModel)]="userName"
+        />
+      </div>
+      <div class="col-8 mb-3">
+        <label for="email">E-mail Id</label>
+        <input
+          type="email"
+          class="form-control"
+          placeholder="Enter email-Id"
+          [(ngModel)]="email"
+        />
+      </div>
+      <div class="col-8 mb-3">
+        <label for="phoneNumber">Phone Number</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter Phone Number"
+          [(ngModel)]="phnNumber"
+        />
+      </div>
+      <div class="col-8">
+        <button class="btn btn-success" (click)="save()">{{btnRef}}</button>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-4">
+      <div class="col-12 mt-5">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>User Name</th>
+              <th>E-mail Id</th>
+              <th>Phone Number</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let dir of directories">
+              <td>{{ dir.userName }}</td>
+              <td>{{ dir.email }}</td>
+              <td>{{ dir.phnNumber }}</td>
+              <td>
+                <button class="btn btn-primary me-3" (click)="edit(dir.id)" >Edit</button>
+                <button class="btn btn-danger" (click)="delete(dir.id)">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+  </div>
+</div>
